@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9933C90F-27DB-4862-81B4-1F5DBA47280A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TP1</RootNamespace>
+    <AssemblyName>TP1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfirmationAjout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationAjout.Designer.cs">
+      <DependentUpon>ConfirmationAjout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmationRetrait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmationRetrait.Designer.cs">
+      <DependentUpon>ConfirmationRetrait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conversion.Designer.cs">
+      <DependentUpon>Conversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlashButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierUnite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierUnite.Designer.cs">
+      <DependentUpon>ModifierUnite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs" />
+    <Compile Include="Unite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unite.Designer.cs">
+      <DependentUpon>Unite.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConfirmationAjout.resx">
+      <DependentUpon>ConfirmationAjout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmationRetrait.resx">
+      <DependentUpon>ConfirmationRetrait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conversion.resx">
+      <DependentUpon>Conversion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierUnite.resx">
+      <DependentUpon>ModifierUnite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unite.resx">
+      <DependentUpon>Unite.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Quitter_Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Quitter_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Quitter_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Quitter_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Accepter_Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Accepter_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Accepter_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Accepter_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Annuler_Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Annuler_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Annuler_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Annuler_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Effacer_Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Effacer_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Effacer_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Effacer_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Editer_Survol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Editer_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Editer_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON_Editer_Neutre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-Neutre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON2-Neutre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON2-Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON2-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON2-Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Ajouter_Click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Ajouter_Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Ajouter_Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Flash Buttons Icon\ICON_Ajouter_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Disable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Click.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
